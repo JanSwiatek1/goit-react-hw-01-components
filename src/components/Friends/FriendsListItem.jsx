@@ -2,7 +2,7 @@ import css from './Friends.module.css';
 
 
 
-export const FriendListItem = ({ id, avatar, name, isOnline }) => {
+const FriendListItem = ({ id, avatar, name, isOnline }) => {
     return (
         <li className={css.item} key={id} id={id}>
             <span className={isOnline ? css.isOnline : css.isOffline}></span>
@@ -11,3 +11,5 @@ export const FriendListItem = ({ id, avatar, name, isOnline }) => {
         </li>
     )
 };
+
+export default FriendListItem;

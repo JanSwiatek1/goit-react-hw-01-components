@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 import css from './Statystics.module.css';
-import getRandomHexColor from '../../utils/getRandomHexColor';
+import getRandomHexColor from '../../utils/getRandomColor';
 
-const Statistics = ({ title, stats }) => {
+const Statystics = ({ title, stats }) => {
     
   return (
-    <section className={css.statistics}>
+    <section className={css.statystics}>
       {title && <h2 className={css.title}>{title}</h2>}
 
       <ul className={css.statList}>
@@ -27,7 +27,7 @@ const Statistics = ({ title, stats }) => {
   );
 };
 
-Statistics.propTypes = {
+Statystics.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.shape({
@@ -37,3 +37,4 @@ Statistics.propTypes = {
     })
   ),
 };
+export default Statystics;

@@ -35,3 +35,5 @@ TransactionHistory.propTypes = {
     }).isRequired
   ),
 };
+
+export default TransactionHistory;
