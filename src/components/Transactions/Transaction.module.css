@@ -25,6 +25,7 @@ th, td{
     /* border-collapse: collapse; */
     /* background-color: inherit; */
     border: 1px solid rgb(178, 175, 175);
+    color: black;
 }
 
 th {
@@ -33,10 +34,6 @@ th {
     text-transform: uppercase;
 }
 
-td {
-
-    color: rgba(106, 103, 103, 0.571);
-}
 
 td:hover,
 td:focus {
