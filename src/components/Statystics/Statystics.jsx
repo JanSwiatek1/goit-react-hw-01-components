@@ -6,6 +6,7 @@ const Statystics = ({ title, stats }) => {
     
   return (
     <section className={css.statystics}>
+      <div className={css.box}>
       {title && <h2 className={css.title}>{title}</h2>}
 
       <ul className={css.statList}>
@@ -23,6 +24,7 @@ const Statystics = ({ title, stats }) => {
           </li>
         ))}
       </ul>
+      </div>
     </section>
   );
 };
