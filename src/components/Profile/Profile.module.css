@@ -2,7 +2,7 @@
     width: 450px;
     padding-top: 50px;
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,8 +13,12 @@
     border: solid 1px #d8e0ea;
     border-radius: 20px;
     box-shadow: 8px 5px 34px -16px rgba(66, 68, 90, 1);
+    transition: scale 0.8s;
 }
-
+.profile:hover,
+.profile:focus {
+    scale: 110%;
+}
 
 
 .container{

@@ -7,3 +7,47 @@
     --backg-card-user: white;
     background-color: #b0b0b07a;
 }
+.friendList{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.isOnline,
+.isOffline {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: block;
+}
+
+.isOnline {
+    background-color: rgb(36, 148, 36);
+}
+
+.isOffline {
+    background-color: brown;
+}
+
+.item {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+    width: 260px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: var(--backg-card-user);
+    transition: scale 0.8s;
+}
+
+.item:hover,
+.item:focus {
+    scale: 110%;
+}
+
+.name {
+    font-family: var(--font-family);
+    font-size: 22px;
+}
